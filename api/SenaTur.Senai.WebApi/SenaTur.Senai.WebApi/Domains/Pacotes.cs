@@ -17,7 +17,35 @@ namespace SenaTur.Senai.WebApi.Domains
         public int IdPacote { get; set; }
 
         [Column(TypeName = "VARCHAR(150)")]
+        [Required(ErrorMessage = "O nome do pacote é obrigatorio!")]
+        public string NomePacote { get; set; }
 
-        //IDPacote,NomePacote,Descricao,DataIda,DataVolta,Valor,Ativo e NomeCidade
+        [Column(TypeName ="TEXT")]
+        [Required(ErrorMessage = "A descrição é obrigatoria!")]
+        public string Descricao { get; set; }
+
+        [Column(TypeName ="DATE")]
+        [Required(ErrorMessage = "A data de Ida é obrigatoria!")]
+        [DataType(DataType.Date)]
+        public DateTime DataIda { get; set; }
+
+        [Column(TypeName = "DATE")]
+        [Required(ErrorMessage = "A data de Volta é obrigatoria!")]
+        [DataType(DataType.Date)]
+        public DateTime DataVolta { get; set; }
+
+        [Column("Preco",TypeName = "DECIMAL (18,2)")]
+        [DataType(DataType.Currency)]
+        [Required(ErrorMessage = "E necessario informar o preço do pacote!")]
+        public decimal Valor { get; set; }
+
+        [Column("Ativo",TypeName = "Bit")]
+        [Required(ErrorMessage = "E necessario informar se esta ativo")]
+        public bool Ativo { get; set; }
+
+        [Column("NomeCidade",TypeName = "VARCHAR(200)")]
+        [Required(ErrorMessage = "E necessario informar o Cidade!")]
+        public string NomeCidade { get; set; }
+
     }
 }
