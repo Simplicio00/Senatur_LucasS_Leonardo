@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SenaTur.Senai.WebApi.Repositories
 {
-    public class UsuariosRepository
+    public class PacotesRepository
     {
 
     }

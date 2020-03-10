@@ -9,7 +9,7 @@ namespace SenaTur.Senai.WebApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Jogos",
+                name: "Pacotes",
                 columns: table => new
                 {
                     IdPacote = table.Column<int>(nullable: false)
@@ -24,7 +24,7 @@ namespace SenaTur.Senai.WebApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Jogos", x => x.IdPacote);
+                    table.PrimaryKey("PK_Pacotes", x => x.IdPacote);
                 });
 
             migrationBuilder.CreateTable(
@@ -62,7 +62,7 @@ namespace SenaTur.Senai.WebApi.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Jogos",
+                table: "Pacotes",
                 columns: new[] { "IdPacote", "Ativo", "DataIda", "DataVolta", "Descricao", "NomeCidade", "NomePacote", "Preco" },
                 values: new object[,]
                 {
@@ -105,7 +105,7 @@ namespace SenaTur.Senai.WebApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Jogos");
+                name: "Pacotes");
 
             migrationBuilder.DropTable(
                 name: "Usuarios");

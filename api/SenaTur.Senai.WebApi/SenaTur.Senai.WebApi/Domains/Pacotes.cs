@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SenaTur.Senai.WebApi.Domains
 {
-    [Table("Jogos")]
+    [Table("Pacotes")]
     public class Pacotes
     {
 

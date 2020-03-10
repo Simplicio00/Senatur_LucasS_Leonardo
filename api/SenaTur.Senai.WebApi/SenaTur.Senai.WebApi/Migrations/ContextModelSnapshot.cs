@@ -54,7 +54,7 @@ namespace SenaTur.Senai.WebApi.Migrations
 
                     b.HasKey("IdPacote");
 
-                    b.ToTable("Jogos");
+                    b.ToTable("Pacotes");
 
                     b.HasData(
                         new { IdPacote = 1, Ativo = true, DataIda = new DateTime(2020, 8, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), DataVolta = new DateTime(2020, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), Descricao = " O que não falta em Salvador são atrações. Prova disso são as praias, os museus e as construções seculares que dão um charme mais que especial à região. A cidade, sinônimo de alegria, também é conhecida pela efervescência cultural que a credenciou como um dos destinos mais procurados por turistas brasileiros e estrangeiros. O Pelourinho e o Elevador são alguns dos principais pontos de visitação.", NomeCidade = "Salvador", NomePacote = "Salvador - 5 Dias/4 Diárias", Valor = 85400m },
