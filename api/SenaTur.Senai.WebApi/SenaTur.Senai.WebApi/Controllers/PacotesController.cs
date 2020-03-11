@@ -50,10 +50,10 @@ namespace SenaTur.Senai.WebApi.Controllers
         }
 
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{Cidade}")]
+        public IActionResult Get(string Cidade)
         {
-            return Ok(banco.Listar());
+            return Ok(banco.Listar(Cidade));
         }
 
 

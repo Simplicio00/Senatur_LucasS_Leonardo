@@ -8,7 +8,7 @@ namespace SenaTur.Senai.WebApi.Interfaces
 {
     interface IPacotesRepository
     {
-        List<Pacotes> Listar();
+        IEnumerable<Pacotes> Listar(string Cidade);
 
         Pacotes BuscarPorId(int id);
 

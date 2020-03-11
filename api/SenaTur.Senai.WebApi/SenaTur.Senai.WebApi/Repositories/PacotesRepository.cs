@@ -40,9 +40,11 @@ namespace SenaTur.Senai.WebApi.Repositories
             banco.SaveChanges();
         }
 
-        public List<Pacotes> Listar()
+        public IEnumerable<Pacotes> Listar(string Cidade)
         {
-            return banco.Pacotes.ToList();
+            return banco.Pacotes.ToList().Where(a => a.NomeCidade == Cidade);
         }
+
+
     }
 }
