@@ -45,6 +45,12 @@ namespace SenaTur.Senai.WebApi.Repositories
             return banco.Pacotes.ToList().Where(a => a.NomeCidade == Cidade);
         }
 
+        public List<Pacotes> Listar()
+        {
+            return banco.Pacotes.ToList();
+        } 
+
+
 
     }
 }

@@ -10,6 +10,8 @@ namespace SenaTur.Senai.WebApi.Interfaces
     {
         IEnumerable<Pacotes> Listar(string Cidade);
 
+        List<Pacotes> Listar();
+
         Pacotes BuscarPorId(int id);
 
         void Cadastrar(Pacotes novoPacote);

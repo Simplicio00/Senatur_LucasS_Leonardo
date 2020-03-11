@@ -56,6 +56,13 @@ namespace SenaTur.Senai.WebApi.Controllers
             return Ok(banco.Listar(Cidade));
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            
+            return Ok(banco.Listar());
+        }
+
 
         [Authorize(Roles = "1")]
         [HttpPost]
