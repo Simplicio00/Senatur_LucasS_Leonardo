@@ -17,6 +17,10 @@ namespace SenaTur.Senai.WebApi.Interfaces
         void Cadastrar(Pacotes novoPacote);
 
         Pacotes Atualizar(int id, Pacotes pacoteAtualizado);
-        
+
+        List<Pacotes> ListarValorDecrescente();
+
+        List<Pacotes> ListarValorCrescente();
+
     }
 }

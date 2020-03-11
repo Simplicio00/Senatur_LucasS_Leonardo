@@ -224,6 +224,68 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "ListarPacotesValorDecrescente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTU4MzkzNjk4MCwiaXNzIjoiU2VuYVR1ci5TZW5haS5XZWJBcGkiLCJhdWQiOiJTZW5hVHVyLlNlbmFpLldlYkFwaSJ9.2pYwPv-WrgAjf6Ou-Ck7cXaaRbNi6RKborXggV3PbWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Api/Pacotes/ListarDecrescente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Api",
+						"Pacotes",
+						"ListarDecrescente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPacotesValorCrescente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTU4MzkzNzMxOSwiaXNzIjoiU2VuYVR1ci5TZW5haS5XZWJBcGkiLCJhdWQiOiJTZW5hVHVyLlNlbmFpLldlYkFwaSJ9.hksO51zgHElwiTydZVIENIVfmVYc6dA0BXecdd5f9KY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Api/Pacotes/ListarCrescente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Api",
+						"Pacotes",
+						"ListarCrescente"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}

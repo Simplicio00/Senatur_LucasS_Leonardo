@@ -50,6 +50,16 @@ namespace SenaTur.Senai.WebApi.Repositories
             return banco.Pacotes.ToList();
         } 
 
+        public List<Pacotes> ListarValorDecrescente()
+        {
+
+            return banco.Pacotes.OrderByDescending(decrescente => decrescente.Valor).ToList();
+        }
+        
+        public List<Pacotes> ListarValorCrescente()
+        {
+            return banco.Pacotes.OrderBy(crescente => crescente.Valor).ToList();
+        }
 
 
     }

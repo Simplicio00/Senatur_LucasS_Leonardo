@@ -63,6 +63,18 @@ namespace SenaTur.Senai.WebApi.Controllers
             return Ok(banco.Listar());
         }
 
+        [HttpGet("ListarDecrescente")]
+        public IActionResult ListandoD()
+        {
+            return Ok(banco.ListarValorDecrescente());
+        }
+
+        [HttpGet("ListarCrescente")]
+        public IActionResult ListandoC()
+        {
+            return Ok(banco.ListarValorCrescente());
+        }
+
 
         [Authorize(Roles = "1")]
         [HttpPost]
