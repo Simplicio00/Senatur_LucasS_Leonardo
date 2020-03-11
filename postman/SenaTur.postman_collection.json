@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "94501773-32a0-4d9b-8159-de124cd3706f",
+		"_postman_id": "8f5c19f5-44c3-42e2-b400-6272e2b9e499",
 		"name": "SenaTur",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -113,6 +113,82 @@
 						"api",
 						"Pacotes",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos os Pacotes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Api/Pacotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Api",
+						"Pacotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar novo pacote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"NomePacote\" : \"Teste\",\n\t\n\t\"Descricao\" : \"descrição do test\",\n\t\n\t\"DataIda\" : \"11/03/2020\",\n\t\n\t\"Valor\" : 999.00,\n\t\n\t\"Ativo\" : 0,\n\t\n\t\"NomeCidade\" : \"São Paulo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Api/Pacotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Api",
+						"Pacotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista os Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Api/Usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Api",
+						"Usuarios"
 					]
 				}
 			},

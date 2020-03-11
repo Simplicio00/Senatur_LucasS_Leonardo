@@ -1,4 +1,5 @@
-﻿using SenaTur.Senai.WebApi.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using SenaTur.Senai.WebApi.Contexts;
 using SenaTur.Senai.WebApi.Domains;
 using SenaTur.Senai.WebApi.Interfaces;
 using System;
@@ -15,6 +16,11 @@ namespace SenaTur.Senai.WebApi.Repositories
         public Usuarios CompararBanco(string Email, string Senha)
         {
             return banco.Usuarios.FirstOrDefault(a => a.Email == Email && a.Senha == Senha);
+        }
+
+        public List<Usuarios> Listar()
+        {
+            return banco.Usuarios.Include(a => a.IdTipoUsuarioNavigation).ToList();
         }
     }
 }

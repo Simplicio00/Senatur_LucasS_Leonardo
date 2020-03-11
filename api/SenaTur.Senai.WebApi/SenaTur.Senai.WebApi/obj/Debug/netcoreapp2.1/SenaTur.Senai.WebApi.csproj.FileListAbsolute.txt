@@ -41,3 +41,8 @@ C:\Users\Acer\Documents\SENAI\EXERCÍCIOS\escola\Senatur_LucasS_Leonardo\api\Sen
 C:\Users\Acer\Documents\SENAI\EXERCÍCIOS\escola\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.dll
 C:\Users\Acer\Documents\SENAI\EXERCÍCIOS\escola\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.xml
 C:\Users\Acer\Documents\SENAI\EXERCÍCIOS\escola\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.pdb
+C:\Users\40349113874\Documents\Repositorios Leonardo\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\bin\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.pdb
+C:\Users\40349113874\Documents\Repositorios Leonardo\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\bin\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.xml
+C:\Users\40349113874\Documents\Repositorios Leonardo\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.dll
+C:\Users\40349113874\Documents\Repositorios Leonardo\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.xml
+C:\Users\40349113874\Documents\Repositorios Leonardo\Senatur_LucasS_Leonardo\api\SenaTur.Senai.WebApi\SenaTur.Senai.WebApi\obj\Debug\netcoreapp2.1\SenaTur.Senai.WebApi.pdb

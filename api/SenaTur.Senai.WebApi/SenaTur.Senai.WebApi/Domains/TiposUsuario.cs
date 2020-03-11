@@ -18,5 +18,7 @@ namespace SenaTur.Senai.WebApi.Domains
         [Required(ErrorMessage = "O titulo do tipo de usuario e obrigatorio!")]
         public string Titulo { get; set; }
 
+        public List<Usuarios> IdUsuario { get; set; }
+
     }
 }

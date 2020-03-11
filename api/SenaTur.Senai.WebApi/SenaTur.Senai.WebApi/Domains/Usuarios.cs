@@ -29,6 +29,6 @@ namespace SenaTur.Senai.WebApi.Domains
         public int IdTipoUsuario { get; set; }
         [ForeignKey("IdTipoUsuario")]
 
-        public TiposUsuario TipoUsuario { get; set; }
+        public TiposUsuario IdTipoUsuarioNavigation { get; set; }
     }
 }

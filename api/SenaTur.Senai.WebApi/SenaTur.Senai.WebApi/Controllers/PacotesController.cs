@@ -45,5 +45,20 @@ namespace SenaTur.Senai.WebApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(banco.Listar());
+        }
+
+        [HttpPost]
+        public IActionResult Post(Pacotes novoPacote)
+        {
+            banco.Cadastrar(novoPacote);
+
+            return StatusCode(201);
+        }
     }
 }

@@ -35,12 +35,14 @@ namespace SenaTur.Senai.WebApi.Repositories
 
         public void Cadastrar(Pacotes novoPacote)
         {
-            throw new NotImplementedException();
+            banco.Pacotes.Add(novoPacote);
+
+            banco.SaveChanges();
         }
 
         public List<Pacotes> Listar()
         {
-            throw new NotImplementedException();
+            return banco.Pacotes.ToList();
         }
     }
 }

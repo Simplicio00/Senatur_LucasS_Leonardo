@@ -9,5 +9,7 @@ namespace SenaTur.Senai.WebApi.Interfaces
     interface IUsuarios
     {
         Usuarios CompararBanco(string Email, string Senha);
+
+        List<Usuarios> Listar();
     }
 }
