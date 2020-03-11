@@ -4,5 +4,12 @@
         <name>SenaTur.Senai.WebApi</name>
     </assembly>
     <members>
+        <member name="M:SenaTur.Senai.WebApi.Controllers.LoginController.Autenticar(SenaTur.Senai.WebApi.Domains.Usuarios)">
+            <summary>
+            Gera o token de acesso para um usuário cadastrado
+            </summary>
+            <param name="validacao">Email e senha do usuário que será comparada aos do banco</param>
+            <returns>Retorna um hash sha256 criptografado</returns>
+        </member>
     </members>
 </doc>

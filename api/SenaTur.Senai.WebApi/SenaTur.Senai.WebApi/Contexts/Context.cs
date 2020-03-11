@@ -17,7 +17,9 @@ namespace SenaTur.Senai.WebApi.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=N-1S-DEV-14\\SQLEXPRESS; Database=SenaTur_Senai_Manha; user Id=sa; pwd=sa@132;");
+            optionsBuilder.UseSqlServer("Server=LUCASSOLIVEIRA\\SQLEXPRESS; Database=SenaTur_Senai_Manha; integrated security=true;");
+
+            //optionsBuilder.UseSqlServer("Server=N-1S-DEV-14\\SQLEXPRESS; Database=SenaTur_Senai_Manha; user Id=sa; pwd=sa@132;");
             base.OnConfiguring(optionsBuilder);
         }
 
