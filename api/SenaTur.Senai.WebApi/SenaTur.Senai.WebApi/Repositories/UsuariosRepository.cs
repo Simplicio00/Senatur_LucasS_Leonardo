@@ -18,7 +18,7 @@ namespace SenaTur.Senai.WebApi.Repositories
             return banco.Usuarios.FirstOrDefault(a => a.Email == Email && a.Senha == Senha);
         }
 
-        public List<Usuarios> Listar()
+        public IEnumerable<Usuarios> Listar()
         {
             return banco.Usuarios.Include(a => a.IdTipoUsuarioNavigation).ToList();
         }
