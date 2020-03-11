@@ -15,6 +15,6 @@ namespace SenaTur.Senai.WebApi.Interfaces
         void Cadastrar(Pacotes novoPacote);
 
         Pacotes Atualizar(int id, Pacotes pacoteAtualizado);
-
+        
     }
 }
