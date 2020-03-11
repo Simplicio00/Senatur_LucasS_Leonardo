@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SenaTur.Senai.WebApi.Domains;
@@ -11,6 +12,7 @@ namespace SenaTur.Senai.WebApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class PacotesController : ControllerBase
     {
@@ -31,6 +33,7 @@ namespace SenaTur.Senai.WebApi.Controllers
         }
 
 
+        [Authorize (Roles = "1")]
         [HttpPut("{id}")]
 
         public IActionResult ModificarPacote(int id, Pacotes pacote)
@@ -53,6 +56,8 @@ namespace SenaTur.Senai.WebApi.Controllers
             return Ok(banco.Listar());
         }
 
+
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Pacotes novoPacote)
         {
